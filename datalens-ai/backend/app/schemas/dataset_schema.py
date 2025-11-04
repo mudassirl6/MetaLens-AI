@@ -9,3 +9,6 @@ class DatasetCreate(DatasetBase):
 
 class DatasetResponse(DatasetBase):
     id: int
+
+    class Config:
+        orm_mode = True  # Enables SQLAlchemy model → Pydantic conversion
